@@ -15,7 +15,8 @@ data class InactiveSubscription(
     }
 }
 
-// See ActiveSubscription.kt for example using extension functions.
+// See ActiveSubscription.kt for example using extension functions
+// instead of defining all behaviors in this file.
 data class ActiveSubscription(
     override val id: UUID,
     val activatedOn: Instant,
