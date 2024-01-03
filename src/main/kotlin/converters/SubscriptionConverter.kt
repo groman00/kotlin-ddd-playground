@@ -46,7 +46,7 @@ class SubscriptionConverter {
             Status.CANCELLED -> CancelledSubscription(record.id)
             Status.INACTIVE -> InactiveSubscription(record.id)
             Status.PAUSED -> PausedSubscription(record.id)
-            else -> throw IllegalArgumentException("Invalid status: ${record.status}")
+            else -> throw IllegalArgumentException("Invalid status: ${record.status}") // This should never happen.
         }
     }
 }
